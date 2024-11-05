@@ -4,9 +4,13 @@ html
       title = "Hello Pug"
       link(rel="stylesheet", href="/css/style.css")
    body
-    section#donde-estamos
-    h2 Dónde Estamos
-    p
-        | Nos encontramos ubicados en Recoletos.
-    p
+      section#donde-estamos
+      h2 Dónde Estamos
+      p
+         | Nos encontramos ubicados en Recoletos.
+      p
+      button(onclick="window.location.href='/'") Ir a Home 
+      button(onclick="window.location.href='/about'") Ir a About     
+      button(onclick="window.location.href='/contact'") Ir a Contact
+      button(onclick="window.location.href='/mision'") Ir a Mission
    include ./footer.pug   
